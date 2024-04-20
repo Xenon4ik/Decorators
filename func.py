@@ -64,3 +64,12 @@ def word_count(word, url='https://www.gutenberg.org/files/2638/2638-0.txt'):
     return f"Cлово {word} встречается {cnt} раз"
 
 print(word_count('whole'))
+
+
+@counter
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-2) + fib(n-1)
+
+fib(10)
